@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccelerometerExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="myZ-dh-3O1">
+                                <rect key="frame" x="166" y="288.5" width="42" height="91.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsT-L9-nEJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB0-WT-5hB">
+                                        <rect key="frame" x="0.0" y="35.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1z-34-6s9">
+                                        <rect key="frame" x="0.0" y="71" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZZE-a5-Hst">
+                                <rect key="frame" x="63" y="444" width="249" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAs-v7-7pu">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                        <state key="normal" title="Raw Data"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sct-Nz-LNs">
+                                        <rect key="frame" x="95" y="0.0" width="60" height="30"/>
+                                        <state key="normal" title="Lowpass"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vnm-Do-Fsd">
+                                        <rect key="frame" x="185" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="Highpass"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZZE-a5-Hst" firstAttribute="top" secondItem="myZ-dh-3O1" secondAttribute="bottom" constant="64" id="1Wg-vC-yne"/>
+                            <constraint firstItem="myZ-dh-3O1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3x-Zg-VcI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZZE-a5-Hst" secondAttribute="bottom" constant="193" id="j6L-fO-5nX"/>
+                            <constraint firstItem="ZZE-a5-Hst" firstAttribute="centerX" secondItem="myZ-dh-3O1" secondAttribute="centerX" id="mwj-DD-Mye"/>
+                            <constraint firstItem="myZ-dh-3O1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vRq-NH-PUH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="accelerometerX" destination="dsT-L9-nEJ" id="uOg-U0-Px5"/>
+                        <outlet property="accelerometerY" destination="dB0-WT-5hB" id="6R5-1S-nT8"/>
+                        <outlet property="accelerometerZ" destination="n1z-34-6s9" id="7jS-Oa-kN5"/>
+                        <outlet property="highpassDataButton" destination="Vnm-Do-Fsd" id="DEI-Zw-QfI"/>
+                        <outlet property="lowpassDataButton" destination="sct-Nz-LNs" id="iH6-dc-49C"/>
+                        <outlet property="rawDataButton" destination="pAs-v7-7pu" id="KCM-Im-aWC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
